@@ -9,6 +9,10 @@ udefine 'capsule', ['root', 'jquery'], (root, $) ->
       @template @data
       
     execute: ->
-      @before?()
+      @before?.apply? @, arguments
       @render()
-      @after?()
+      @after?.apply? @, arguments
+
+  Capsule.TemplateConnector = {}
+  
+  Capsule
