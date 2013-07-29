@@ -4,7 +4,7 @@ udefine 'capsule', ['root', 'jquery'], (root, $) ->
     constructor: (fn, elem) ->
       [fn, elem] = [null, fn] if fn instanceof $
       
-      fn.call(@, @) if fn?
+      fn.call @, @ if fn?
       
       @data = {}
       
