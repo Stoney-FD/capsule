@@ -1,16 +1,21 @@
 (function() {
   (function(root, $) {
-    return udefine.globals['jquery'] = $;
+    udefine.globals['jquery'] = $;
+    return udefine.inject['capsule'] = {
+      root: root,
+      name: 'Capsule'
+    };
   })(this, this.jQuery);
 
 }).call(this);
 
 (function() {
-  udefine('capsule', ['root', 'jquery'], function(root, $) {
+  udefine('capsule', ['jquery', 'mixer', 'eventmap'], function($, mixer, EventMap) {
     var Capsule;
     Capsule = (function() {
       function Capsule(fn, elem) {
         var _ref;
+        mixer([this, Capsule.prototype], new EventMap());
         if (fn instanceof $) {
           _ref = [null, fn], fn = _ref[0], elem = _ref[1];
         }
