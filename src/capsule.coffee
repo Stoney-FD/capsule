@@ -10,14 +10,12 @@ udefine 'capsule', ['jquery', 'mixer', 'eventmap'], ($, mixer, EventMap) ->
       
       @data = {}
       
-    render: ->
-      return unless @template
-      @template @data
+      @on 'render', =>
+        return unless @template
+        @template @data
       
     execute: ->
-      @before?.apply? @, arguments
-      @render()
-      @after?.apply? @, arguments
+      @trigger.apply @ 'render', arguments
 
   Capsule.TemplateConnector = {}
   
