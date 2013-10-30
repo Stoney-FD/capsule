@@ -1,6 +1,7 @@
 do (root = @, $ = @jQuery) ->
-  udefine.globals['jquery'] = $
+  udefine.configure (root) ->
+    udefine.modules.globals['jquery'] = $
 
-  udefine.inject['capsule'] =
-    root: root
-    name: 'Capsule'
+    udefine.inject.add 'capsule',
+      root: root
+      name: 'Capsule'
