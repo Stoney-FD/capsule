@@ -15,7 +15,7 @@ udefine 'capsule', ['jquery', 'mixer', 'eventmap'], ($, mixer, EventMap) ->
         @template @data
       
     execute: ->
-      @trigger.apply @ 'render', arguments
+      @trigger.apply @, ['render', arguments]
 
   Capsule.TemplateConnector = {}
   
