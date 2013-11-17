@@ -1,6 +1,6 @@
 {
   "name": "capsule",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "http://github.com/Stoney-FD/capsule.git"
@@ -11,7 +11,28 @@
     "grunt-contrib-uglify": "*",
     "grunt-coffeelint": "*"
   },
-  "readmeFilename": "README.md",
   "author": "Johannes Stein",
-  "license": "Public domain"
+  "license": "Public domain",
+  "description": "Provides a widget with a view and logic",
+  "bugs": {
+    "url": "https://github.com/Stoney-FD/capsule/issues"
+  },
+  "main": "dist/capsule.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "grunt-coffeelint": "~0.0.7",
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.2"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "capsule",
+    "events",
+    "render"
+  ]
 }
