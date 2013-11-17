@@ -35,7 +35,7 @@
       }
 
       Capsule.prototype.execute = function() {
-        return this.trigger.apply(this('render', arguments));
+        return this.trigger.apply(this, ['render', arguments]);
       };
 
       return Capsule;
