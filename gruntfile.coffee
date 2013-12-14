@@ -17,6 +17,7 @@ module.exports = (grunt) ->
         files:
           'dist/<%= pkg.name %>.min.js': ['dist/<%= pkg.name %>.js']
     coffeelint:
+      options: grunt.file.readJSON 'coffeelint.json'
       app: ['src/**/*.coffee'],
       test: ['src/**/*.coffee'],
       grunt: ['Gruntfile.coffee']
