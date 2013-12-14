@@ -1,8 +1,8 @@
-udefine 'capsule', ['jquery', 'mixer', 'eventmap'], ($, mixer, EventMap) ->
+udefine 'capsule', ['jquery', 'mixedice', 'eventmap'], ($, mixedice, EventMap) ->
   
   class Capsule
     constructor: (fn, elem) ->
-      mixer [@, Capsule::], new EventMap()
+      mixedice [@, Capsule::], new EventMap()
       
       [fn, elem] = [null, fn] if fn instanceof $
       
