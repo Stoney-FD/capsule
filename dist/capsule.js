@@ -12,13 +12,13 @@
 }).call(this);
 
 (function() {
-  udefine('capsule', ['jquery', 'mixer', 'eventmap'], function($, mixer, EventMap) {
+  udefine('capsule', ['jquery', 'mixedice', 'eventmap'], function($, mixedice, EventMap) {
     var Capsule;
     Capsule = (function() {
       function Capsule(fn, elem) {
         var _ref,
           _this = this;
-        mixer([this, Capsule.prototype], new EventMap());
+        mixedice([this, Capsule.prototype], new EventMap());
         if (fn instanceof $) {
           _ref = [null, fn], fn = _ref[0], elem = _ref[1];
         }
