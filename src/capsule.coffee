@@ -1,12 +1,13 @@
 udefine 'capsule', ['jquery', 'mixedice', 'eventmap'], ($, mixedice, EventMap) ->
   
+  $ify = (elem) -> if elem instanceof $ then elem else $(elem)
+  
   class Capsule
-    constructor: (fn, elem) ->
+    constructor: (@factory, target) ->
       mixedice [@, Capsule::], new EventMap()
       
-      [fn, elem] = [null, fn] if fn instanceof $
-      
-      fn.call @, @ if fn?
+      if elem?
+        @$target = $ify target
       
       @data = {}
       
@@ -15,8 +16,17 @@ udefine 'capsule', ['jquery', 'mixedice', 'eventmap'], ($, mixedice, EventMap) -
         @template @data
       
     execute: ->
+      @factory.call @, @ if @factory?
       @trigger.apply @, ['render', arguments]
+      
+    bindEvent: ->
+      
+    bindEvents: ->
+      
+    behavior: ->
 
   Capsule.TemplateConnector = {}
+  
+  Capsule.EventPool = new EventMap()
   
   Capsule
