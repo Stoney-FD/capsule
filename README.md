@@ -13,3 +13,5 @@ Getting started
 ```javascript
 var myCapsule = new Capsule();
 ```
+
+Each `Capsule` has its own event map, where events can be added through `.on` and removed by using the `.off` method.
