@@ -6,7 +6,7 @@ udefine 'capsule', ['jquery', 'mixedice', 'eventmap'], ($, mixedice, EventMap) -
     constructor: (@factory, target) ->
       mixedice [@, Capsule::], new EventMap()
       
-      if elem?
+      if target?
         @$target = $ify target
       
       @data = {}
