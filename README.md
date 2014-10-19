@@ -14,7 +14,7 @@ Getting started
 var myCapsule = new Capsule();
 ```
 
-Each `Capsule` has can trigger events, where events can be added through `.on` and removed by using the `.off` method. An example would be:
+Each `Capsule` can trigger events, where events can be added through `.on` and removed by using the `.off` method. An example would be:
 ```javascript
 myCapsule.on('test', function() {
   console.log('Do something');
