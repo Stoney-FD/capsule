@@ -22,3 +22,7 @@ myCapsule.on('test', function() {
 
 myCapsule.trigger('test');
 ```
+
+License
+-------
+This is public doamin. If that does not work for you, you can alternatively use the MIT license.
