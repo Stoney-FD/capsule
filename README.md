@@ -23,6 +23,8 @@ myCapsule.on('test', function() {
 myCapsule.trigger('test');
 ```
 
+2. Use the capsule
+
 License
 -------
 This is public domain. If that does not work for you, you can alternatively use the MIT license.
