@@ -14,6 +14,13 @@ define(['jquery', 'eventmap'], function($, EventMap) {
 
   };
 
+  Capsule.prototype.addBehavior = function(name) {
+    $('[data-behavior=' + name + ']', this.$target).each(function(t) {
+      var $ = $(t);
+      Behavior.call(name, $t);
+    });
+  };
+
   Capsule.prototype.execute = function(args) {
     this.factory.apply(this, args);
 
