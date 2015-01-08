@@ -19,6 +19,10 @@ define(function() {
     };
   };
 
+  Behavior.call = function(name, target) {
+    Behavior.list[name](target);
+  };
+
   Behavior.remove = function(name) {
     Behavior.list[name] = undefined;
   };
