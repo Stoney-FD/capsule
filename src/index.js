@@ -1,4 +1,4 @@
-define(['jquery', 'eventmap'], function($, EventMap) {
+define(['jquery', 'eventmap', 'capsule/behavior'], function($, EventMap, Behavior) {
 
   var Capsule = function(target, factory) {
     EventMap.mixin(this, Capsule);
