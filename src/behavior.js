@@ -27,4 +27,6 @@ define(function() {
     Behavior.list[name] = undefined;
   };
 
+  return Behavior;
+
 });
