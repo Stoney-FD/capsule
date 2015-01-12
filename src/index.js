@@ -8,6 +8,10 @@ define(['jquery', 'eventmap', 'capsule/behavior'], function($, EventMap, Behavio
 
     this.defaultEvent = Capsule.defaultEvent;
 
+    this.localization = new Localization();
+
+    this.id = 'capsule-' + Date.now();
+
     this.template = '';
     this.style = '';
   };
@@ -33,6 +37,13 @@ define(['jquery', 'eventmap', 'capsule/behavior'], function($, EventMap, Behavio
     this.factory.apply(this, args);
 
     // Inject style
+    var completeStyle = '<style id="' + this.id + '">' + $target.selector + '{ ' + this.style + ' } </style>';
+
+    $('head').append(completeStyle);
+  };
+
+  Capsule.prototype.t = function(name) {
+
   };
 
   Capsule.TemplateConnector = null;
