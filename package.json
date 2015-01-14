@@ -6,10 +6,12 @@
     "url": "http://github.com/Stoney-FD/capsule.git"
   },
   "devDependencies": {
+    "bower": "^1.3.12",
     "grunt": "0.4.x",
+    "grunt-cli": "^0.1.13",
+    "grunt-coffeelint": "*",
     "grunt-contrib-coffee": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-coffeelint": "*"
+    "grunt-contrib-uglify": "*"
   },
   "author": "Johannes Stein",
   "license": "Public domain",
