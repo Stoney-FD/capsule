@@ -16,15 +16,19 @@
     <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    
-    <script src="../bower_components/udefine/dist/udefine.js"></script>
-    <script src="../bower_components/mixedice/dist/mixedice.js"></script>
+
+    <script src="../bower_components/almond/almond.js"></script>
     <script src="../bower_components/eventmap/dist/eventmap.js"></script>
     <script src="../bower_components/jquery/jquery.js"></script>
     <script src="../dist/capsule.js"></script>
   </head>
 
   <body>
-    
+
+  <script>
+    require(['capsule'], function(Capsule) {
+      var cap = new Capsule();
+    });
+  </script>
   </body>
 </html>
