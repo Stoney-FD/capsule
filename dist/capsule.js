@@ -30,7 +30,11 @@ define('capsule/behavior', function() {
   return Behavior;
 
 });
-define('capsule', ['jquery', 'eventmap', 'capsule/behavior'], function($, EventMap, Behavior) {
+define('capsule', ['require'], function(require) {
+  var $ = require('jquery');
+  var EventMap = require('eventmap');
+  var Behavior = require('capsule/behavior');
+  var Localization = require('capsule/localization');
 
   var Capsule = function(target, factory) {
     EventMap.mixin(this, Capsule);
@@ -87,6 +91,7 @@ define('capsule', ['jquery', 'eventmap', 'capsule/behavior'], function($, EventM
   return Capsule;
 
 });
+
 define('capsule/localization', function() {
   var Localization = function(data) {
     this.data = data || {};
@@ -94,4 +99,6 @@ define('capsule/localization', function() {
   };
 
   Localization.defaultLanguage = 'en';
+
+  return Localization;
 });
