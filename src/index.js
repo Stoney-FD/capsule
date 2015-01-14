@@ -46,6 +46,8 @@ define(['jquery', 'eventmap', 'capsule/behavior'], function($, EventMap, Behavio
 
   };
 
+  Capsule.EventPool = new EventMap();
+
   Capsule.TemplateConnector = null;
 
   Capsule.defaultEvent = 'click';
