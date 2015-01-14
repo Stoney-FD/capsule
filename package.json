@@ -30,6 +30,8 @@
     "grunt-contrib-uglify": "~0.2.2"
   },
   "scripts": {
+    "grunt": "grunt",
+    "bower": "bower",
     "test": "grunt test"
   },
   "keywords": [
