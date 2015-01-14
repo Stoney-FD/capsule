@@ -4,4 +4,4 @@ module.exports =
     base: 'src/'
   all:
     files:
-      'dist/<%= package.name %>.all.js': 'src/**/*.js'
+      'dist/<%= package.name %>.js': 'src/**/*.js'
