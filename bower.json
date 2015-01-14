@@ -13,9 +13,7 @@
   ],
   "dependencies": {
     "jquery": "~2.0.3",
-    "udefine": "~0.8.0",
-    "mixedice": "~0.5.1",
-    "eventmap": "~1.3.0"
+    "eventmap": "~1.4.0"
   },
   "homepage": "https://github.com/Stoney-FD/capsule",
   "authors": [
@@ -29,5 +27,8 @@
     "view",
     "logic"
   ],
-  "license": "UNLICENSE"
+  "license": "UNLICENSE",
+  "devDependencies": {
+    "almond": "~0.3.0"
+  }
 }
