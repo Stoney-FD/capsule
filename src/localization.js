@@ -5,4 +5,6 @@ define(function() {
   };
 
   Localization.defaultLanguage = 'en';
+
+  return Localization;
 });
