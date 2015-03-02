@@ -1,7 +1,7 @@
 module.exports =
   options:
-    namespace: '<%= package.name %>'
+    namespace: 'capsule'
     base: 'src/'
   all:
     files:
-      'dist/<%= package.name %>.js': 'src/**/*.js'
+      'dist/capsule.js': 'src/**/*.js'

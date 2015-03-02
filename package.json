@@ -1,9 +1,9 @@
 {
-  "name": "capsule",
+  "name": "capsulated",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "http://github.com/Stoney-FD/capsule.git"
+    "url": "http://github.com/frostney/capsulated.git"
   },
   "devDependencies": {
     "bower": "^1.3.12",
@@ -13,8 +13,8 @@
     "grunt-coffeelint": "*",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-coffee": "*",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-uglify": "^0.2.7",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.8.0",
     "jit-grunt": "^0.9.0",
     "load-grunt-config": "^0.16.0",
     "time-grunt": "^1.0.0"
@@ -23,17 +23,11 @@
   "license": "Public domain",
   "description": "Provides a widget with a view and logic",
   "bugs": {
-    "url": "https://github.com/Stoney-FD/capsule/issues"
+    "url": "https://github.com/frostney/capsulated/issues"
   },
   "main": "dist/capsule.js",
   "directories": {
     "example": "examples"
-  },
-  "dependencies": {
-    "grunt-coffeelint": "~0.0.7",
-    "grunt": "~0.4.1",
-    "grunt-contrib-coffee": "~0.7.0",
-    "grunt-contrib-uglify": "~0.2.2"
   },
   "scripts": {
     "grunt": "grunt",

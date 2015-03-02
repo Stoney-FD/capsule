@@ -1,5 +1,5 @@
 {
-  "name": "capsule",
+  "name": "capsulated",
   "version": "0.0.1",
   "main": "dist/capsule.js",
   "ignore": [
@@ -15,7 +15,7 @@
     "jquery": "~2.0.3",
     "eventmap": "~1.4.0"
   },
-  "homepage": "https://github.com/Stoney-FD/capsule",
+  "homepage": "https://github.com/frostney/capsulated",
   "authors": [
     "Johannes Stein <johannesstein@freeze-dev.com>"
   ],
