@@ -19,6 +19,9 @@
     "load-grunt-config": "^0.16.0",
     "time-grunt": "^1.0.0"
   },
+  "dependencies": {
+    "eventmap": "^1.6.0"
+  },
   "author": "Johannes Stein",
   "license": "Public domain",
   "description": "Provides a widget with a view and logic",
