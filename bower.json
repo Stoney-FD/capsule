@@ -12,8 +12,7 @@
     "udefine"
   ],
   "dependencies": {
-    "jquery": "~2.0.3",
-    "eventmap": "~1.4.0"
+    "eventmap": "~1.6.0"
   },
   "homepage": "https://github.com/frostney/capsulated",
   "authors": [
