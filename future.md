@@ -54,3 +54,21 @@ var Headline = capsulated(function(data) {
 var headline = Headline('My headline');
 headline.attachTo(document.getElementById('container'));
 ```
+
+
+Different concept, different future:
+```javascript
+var MyScreen = function({before, after}) {
+  before(function() {
+    console.log('before');
+  });
+
+  after(function() {
+    
+  });
+
+  return <div></div>;
+};
+
+Capsulated.render(MyScreen, document.getElementById('content'));
+```
